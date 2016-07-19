@@ -1,0 +1,36 @@
+{
+  "name": "checkbox-list",
+  "version": "1.0.0",
+  "description": "React component that displays a list (column) of checkboxes that respond on a parent provided callback.",
+  "main": "lib/CheckboxList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel src --out-dir lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports",
+    "browserify": "browserify ./lib/CheckboxList.js -o ./build/CheckboxList.js --transform browserify-global-shim --standalone CheckboxList",
+    "build": "npm run babel && npm run browserify && npm run uglify",
+    "uglify": "node uglify.js"
+  },
+  "keywords": [
+    "React",
+    "checkbox"
+  ],
+  "author": "Angel Beltran",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "browserify": "^13.0.1",
+    "browserify-global-shim": "^1.0.3",
+    "uglify": "^0.1.5"
+  },
+  "browserify-global-shim": {
+    "react": "React"
+  },
+  "dependencies": {}
+}

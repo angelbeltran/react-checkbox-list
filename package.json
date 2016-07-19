@@ -1,5 +1,5 @@
 {
-  "name": "checkbox-list",
+  "name": "react-checkboxes",
   "version": "1.0.0",
   "description": "React component that displays a list (column) of checkboxes that respond on a parent provided callback.",
   "main": "lib/CheckboxList.js",
@@ -32,5 +32,6 @@
   "browserify-global-shim": {
     "react": "React"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "git": "https://github.com/angelbeltran/react-checkboxes.git"
 }

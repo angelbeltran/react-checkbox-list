@@ -45,7 +45,6 @@ let CheckboxList = React.createClass({
     if (typeof parentResponse === 'boolean') {
       if (parentResponse !== e.target.checked) e.preventDefault() // don't let checkbox toggle if response didn't change status
     } else if (typeof parentResponse === 'object') { // check for promise
-      console.log('thenable?:', !!parentResponse.then)
       if (parentResponse.then) return parentResponse.then(callback)
       else fail()
     } else {} // this.props.onChange should call the callback provided

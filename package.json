@@ -1,6 +1,6 @@
 {
   "name": "react-checkboxes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that displays a list (column) of checkboxes that respond on a parent provided callback.",
   "main": "lib/CheckboxList.js",
   "scripts": {
@@ -17,7 +17,8 @@
   "author": "Angel Beltran",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
